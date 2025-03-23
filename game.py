@@ -1,4 +1,4 @@
-import random
+import random, time
 
 class Vessel:
     def __init__(self, max_health, health, soul, power, chance):
@@ -10,6 +10,7 @@ class Vessel:
 
     def take_damage(self, damage):
         if random.randint(1, 100) <= self.chance:
+            time.sleep(0.5)
             print("(Vessel dodged the attack!)")
             return self.health
         
@@ -68,6 +69,7 @@ class Enemy:
 
     def take_damage(self, damage):
         if random.randint(1, 100) <= self.chance:
+            time.sleep(0.5)
             print(f"({self.name} dodged the attack!)")
             return self.health
 
@@ -88,6 +90,7 @@ class Enemy:
 
     def stagger_stage(self):
         if self.health <= self.stagger[0]:
+            time.sleep(1)
             print(f"\n〉{self.name} staggers! {self.stagger[1]} 〈")
             self.attack += round(self.attack / 2)
             return True
@@ -95,6 +98,7 @@ class Enemy:
 
     def enemy_dies(self):
         print(f"\n{self.death}")
+        time.sleep(2)
 
 def stats(knight):
     print(f"\nVessel: {knight.health}hp | {knight.soul} soul")
@@ -136,6 +140,7 @@ def game_round(knight, spells):
             )
 
         print(f"\n〉A NEW CHALLENGER HAS APPEARED: {enemy.name}!! 〈")
+        time.sleep(1)
         enemy.character_moto()
 
         global stagger_check 
@@ -150,6 +155,7 @@ def game_round(knight, spells):
                 if stagger_check == False:
                     stagger_check = enemy.stagger_stage()
 
+                time.sleep(1)
                 print("\n - - - NEW TURN - - -")
                 stats(knight)
 
@@ -173,6 +179,8 @@ def game_round(knight, spells):
                 else:
                     print("Invalid input!")
                     invalid = True
+
+                time.sleep(1)
 
                 if enemy.health > 0 and invalid == False:
                     enemy_damage = enemy.attack_player()
