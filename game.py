@@ -122,16 +122,22 @@ def enemies_hard():
 charms = ["Mark of Pride", "Shaman Stone", "Lifeblood Heart"]
 
 def pick_charm():
-    charm = int(input("\nPick a Charm:\n  [1] Mark of Pride\n  [2] Shaman Stone\n  [3] Lifeblood Heart\n\nChoose: "))
+    charm = input("\nPick a Charm:\n  [1] Mark of Pride\n  [2] Shaman Stone\n  [3] Lifeblood Heart\n\nChoose: ")
 
-    if charm == 1:
-        print("\nEquipped Mark of Pride!")
-    elif charm == 2:
-        print("\nEquipped Shaman Stone!")
-    elif charm == 3:
-        print("\nEquipped Lifeblood Heart!")
-    else: 
-        print("Invalid input!")
+    try:
+        charm = int(charm)
+
+        if charm == 1:
+            print("\nEquipped Mark of Pride!")
+        elif charm == 2:
+            print("\nEquipped Shaman Stone!")
+        elif charm == 3:
+            print("\nEquipped Lifeblood Heart!")
+        else: 
+            print("\nInvalid charm!")
+
+    except:
+        print("\nInvalid charm!")
 
     return charm
 
@@ -262,23 +268,34 @@ def start():
                     }
 
             elif option == "b":
-                difficulty = int(input(f"\nChange difficulty:\n  [1] Easy\n  [2] Hard\n\nChoose: ").strip())
-                if difficulty == 1:
-                    enemies = enemies_easy()
-                    print("\nDifficulty: Easy")
-                elif difficulty == 2:
-                    enemies = enemies_hard()
-                    print("\nDifficulty: Hard")
+                difficulty = input(f"\nChange difficulty:\n  [1] Easy\n  [2] Hard\n\nChoose: ").strip()
+                try:
+                    difficulty = int(difficulty)
+
+                    if difficulty == 1:
+                        enemies = enemies_easy()
+                        print("\nDifficulty: Easy")
+                    elif difficulty == 2:
+                        enemies = enemies_hard()
+                        print("\nDifficulty: Hard")
+                    else:
+                        print("\nInvalid difficulty!")
+
+                except:
+                    print("\nInvalid difficulty!")
 
             elif option == "r":
                 print("\nWelcome to Mini Hollow Knight!")
                 continue
+
+            else: 
+                print("\nInvalid Input!")
 
         elif menu == "q":
             print("Godspeed, fellow vessel.")
             break
 
         else:
-            print("Invalid input!")
+            print("\nInvalid input!")
 
 start()
