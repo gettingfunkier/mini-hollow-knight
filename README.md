@@ -1,4 +1,5 @@
 # Mini Hollow Knight!
+A terminal-based, Hollow Knight inspired boss rush minigame!
 ### - Nail attack
 Gain a soul for every attack. For every 3 hits in a row, do a Great Slash to destroy your foes! Both the player and the enemy have a chance to dodge and avoid damage
 ### - Heal yourself
