@@ -1,0 +1,56 @@
+[  M I N I   H O L L O W   K N I G H T  ]
+▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰
+
+
+DIFFICULTY    ┆ ϟϟ Hard
+Bound to..    ┆ ⌑ Unbreakable Strength
+
+
+____[ MAIN MENU ]________________________
+
+  ➤ [A]  Start Journey 
+  ➤ [B]  Options & Charms
+  ➤ [Q]  Quit to Void
+
+▷  
+
+
+
+▰▱▱ [ ϟ ] Normal
+▰▰▰ [ ϟ ] Hard
+
+
+⌑ Unbreakable Strength
+✦ Shaman Stone
+❤ Lifeblood Heart
+
+▣▫▫ [ ⌑ ] Unbreakable Strength
+▫▣▫ [ ✦ ] Shaman Stone
+▫▫▣ [ ❤ ] Lifeblood Heart
+
+
+
+____[ OPTIONS ]__________________________
+
+  ➤ [A]  Pick a Charm 
+  ➤ [B]  Change Difficulty
+  ➤ [Q]  Return to Menu
+
+▷  
+
+
+____[ OPTIONS ]_( CHARMS )_______________
+
+  ➤ [1]  Unbreakable Strength
+  ➤ [2]  Shaman Stone
+  ➤ [3]  Lifeblood Heart
+
+▷  
+
+
+____[ OPTIONS ]_( DIFFICULTY )___________
+
+  ➤ [1]  ϟ   Normal
+  ➤ [2]  ϟϟ  Hard
+
+▷  

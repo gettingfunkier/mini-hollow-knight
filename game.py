@@ -144,7 +144,7 @@ def enemies_hard():
 charms = ["Mark of Pride", "Shaman Stone", "Lifeblood Heart"]
 
 def pick_charm():
-    charm = input("\n____[ OPTIONS ]_( CHARMS )_______________\n\n  ➤ [ 1 ]  ⌑  Unbreakable Strength\n  ➤ [ 2 ]  ✦  Shaman Stone\n  ➤ [ 3 ]  ❤  Lifeblood Heart\n\n▷  ")
+    charm = input("\n___ [ CHARMS ] ________________\n\n  ➤ [ 1 ]  ⌑  Unbreakable Strength\n  ➤ [ 2 ]  ✦  Shaman Stone\n  ➤ [ 3 ]  ❤  Lifeblood Heart\n\n▷  ")
 
     try:
         charm = int(charm)
@@ -289,7 +289,7 @@ def start():
     while True:
         print("\n[  M I N I   H O L L O W   K N I G H T  ]\n▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰\n")
         print(f"\nDIFFICULTY  ︳   {difficulty}\nBound to..  ︳   {charm_name}\n")
-        print(f"\n____[ MAIN MENU ]________________________\n\n  ➤ [ A ]  START\n  ➤ [ B ]  Options\n  ➤ [ Q ]  Quit\n")
+        print(f"\n___ [ MAIN MENU ] _____________\n\n  ➤ [ A ]  START\n  ➤ [ B ]  Options\n  ➤ [ Q ]  Quit\n")
         menu = input("\n▷  ").strip().lower()
         if menu == "a" and charm == None:
             knight = Vessel(max_health = 50, health = 50, soul = 0, max_soul = 3, power = 5, chance = 30)
@@ -305,7 +305,7 @@ def start():
             break
 
         elif menu == "b":
-            option = input(f"\n____[ OPTIONS ]__________________________\n\n  ➤ [ A ]  Pick a Charm\n  ➤ [ B ]  Change Difficulty\n  ➤ [ Q ]  Return to Menu\n\n▷  ").strip().lower()
+            option = input(f"\n___ [ OPTIONS ] _______________\n\n  ➤ [ A ]  Pick a Charm\n  ➤ [ B ]  Change Difficulty\n  ➤ [ Q ]  Return to Menu\n\n▷  ").strip().lower()
             if option == "a":
                 charm = pick_charm()
 
@@ -332,7 +332,7 @@ def start():
                     }
 
             elif option == "b":
-                difficulty_int = input(f"\n____[ OPTIONS ]_( DIFFICULTY )___________\n\n  ➤ [ 1 ]  ϟ   Normal\n  ➤ [ 2 ]  ϟϟ  Hard\n\n▷  ").strip()
+                difficulty_int = input(f"\n___ [ DIFFICULTY ] ____________\n\n  ➤ [ 1 ]  ϟ   Normal\n  ➤ [ 2 ]  ϟϟ  Hard\n\n▷  ").strip()
                 try:
                     difficulty_int = int(difficulty_int)
 
