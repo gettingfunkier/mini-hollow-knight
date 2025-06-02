@@ -363,3 +363,5 @@ def start():
             print("\nInvalid input!")
 
 start()
+
+# Script by gettingfunkier, 2025
