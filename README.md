@@ -122,4 +122,4 @@ C͟h͟o͟o͟s͟e͟ ͟y͟o͟u͟r͟ ͟a͟c͟t͟i͟o͟n͟:
 ## Credits
 - Game concept & assets: [**Hollow Knight, Team Cherry** ↗](https://www.teamcherry.com.au)
 - Code: [**gettingfunkier** ↗](https://github.com/gettingfunkier)
-- Made with ❤ in Python, during Y1 of Software Egineering, 2025
+- Made with ❤ in Python, during Y1 of Software Engineering, 2025
