@@ -21,7 +21,7 @@ It mixes:
    cd mini-hollow-knight
 2. Run with Python:
     ```bash
-    python mini_hollow_knight.py
+    python game.py
     ```
 
 ## How to play
