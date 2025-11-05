@@ -305,7 +305,7 @@ def start():
             break
 
         elif menu == "b":
-            option = input(f"\n___ [ OPTIONS ] _________________________\n\n  ➤ [ A ]  Pick a Charm\n  ➤ [ B ]  Change Difficulty\n  ➤ [ Q ]  Return to Menu\n\n▷  ").strip().lower()
+            option = input(f"\n___ [ OPTIONS ] _________________________\n\n  ➤ [ A ]  Pick a Charm\n  ➤ [ B ]  Change Difficulty\n  ➤ [ C ]  Credits\n  ➤ [ R ]  Return to Menu\n\n▷  ").strip().lower()
             if option == "a":
                 charm = pick_charm()
 
@@ -348,8 +348,15 @@ def start():
                 except:
                     print("\nInvalid difficulty!")
 
+            elif option == "c":
+                print()
+                print("----------------------")
+                print("> code: gettingfunkier")
+                print("> assets: Team Cherry")
+                print("----------------------")
+                continue
+
             elif option == "r":
-                print("\nWelcome to Mini Hollow Knight!")
                 continue
 
             else: 
