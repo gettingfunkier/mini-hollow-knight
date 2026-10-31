@@ -195,7 +195,7 @@ def game_round(knight, spells, enemies):
                 print("\n ▰ ▰ ▰ [ NEW TURN ] ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰ ▰")
                 stats(knight)
 
-                action = input(f"\nC͟h͟o͟o͟s͟e͟ ͟y͟o͟u͟r͟ ͟a͟c͟t͟i͟o͟n͟:\n\n   [1] Attack {enemy.name}\n   [2] Heal yourself\n   [3] Cast a spell\n\n▷  ").strip().lower()
+                action = input(f"\nChoose your action:\n-------------------\n\n   [1] Attack {enemy.name}\n   [2] Heal yourself\n   [3] Cast a spell\n\n▷  ").strip().lower()
 
                 global critical
 
@@ -228,7 +228,7 @@ def game_round(knight, spells, enemies):
 
                     elif action == 3:
                         critical = 1
-                        spell_input = input(f"\nC͟h͟o͟o͟s͟e͟ ͟a͟ ͟s͟p͟e͟l͟l͟:\n\n   [A] Vengeful Spirit (2 souls)\n   [B] Howling Wraiths (3 souls)\n\n▷  ").strip().lower()
+                        spell_input = input(f"\nChoose a spell:\n---------------\n\n   [A] Vengeful Spirit (2 souls)\n   [B] Howling Wraiths (3 souls)\n\n▷  ").strip().lower()
                         if spell_input == "a":
                             print(top)
                             spell = "vengeful spirit"
@@ -371,4 +371,4 @@ def start():
 
 start()
 
-# Script by gettingfunkier, 2025
+# Script by gettingfunkier, 2025/26
